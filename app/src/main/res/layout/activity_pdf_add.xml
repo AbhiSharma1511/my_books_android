@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bookbackground"
+    tools:context=".adminActivities.PdfAddActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbarRelative"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/shape_toolbar_01">
+
+        <ImageView
+            android:id="@+id/iconIv"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/openbook" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iconIv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Add a New Book"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+        <ImageButton
+            android:id="@+id/attachBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_baseline_attach_file_24"
+            android:layout_margin="18dp"
+            android:padding="5dp"
+            android:background="@android:color/transparent"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:orientation="vertical"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/bookTitleTil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/bookTitleEt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_edittext_01"
+                android:drawableStart="@drawable/ic_pdf_gray"
+                android:drawablePadding="10dp"
+                android:hint="Book Title"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_01"
+                android:textSize="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/bookDescriptionTil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:hintEnabled="false">
+
+
+            <EditText
+                android:id="@+id/bookDescriptionEt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_edittext_01"
+                android:drawableStart="@drawable/ic_pdf_gray"
+                android:drawablePadding="10dp"
+                android:hint="Book Description"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_01"
+                android:textSize="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/bookCategoryTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_edittext_01"
+                    android:drawableStart="@drawable/ic_category_gray"
+                    android:drawableEnd="@drawable/ic_down_gray"
+                    android:drawablePadding="10dp"
+                    android:hint="Book Category"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray_01"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp" />
+
+<!--        <EditText-->
+<!--            android:id="@+id/bookCategoryTv"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:background="@drawable/shape_edittext_01"-->
+<!--            android:drawableStart="@drawable/ic_category_gray"-->
+<!--            android:drawableEnd="@drawable/ic_down_gray"-->
+<!--            android:drawablePadding="10dp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:hint="Book Category As Shown you in previous interface"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:padding="10dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textColorHint="@color/gray_01"-->
+<!--            android:textSize="16sp" />-->
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/shapebutton"
+            android:text="Upload"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
